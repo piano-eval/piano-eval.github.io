@@ -21,9 +21,9 @@ $sessionParam = null;
 
 //get_magic_quotes_gpc() was removed in PHP 8
 if(version_compare(PHP_VERSION, '8.0.0', '<') and get_magic_quotes_gpc()){
-	$sessionParam = stripslashes($_POST['sessionJSON']);
+	$sessionParam = stripslashes(file_get_contents('php://input'));
 }else{
-	$sessionParam = $_POST['sessionJSON'];
+	$sessionParam = file_get_contents('php://input');
 }
 
 
