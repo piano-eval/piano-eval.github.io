@@ -126,8 +126,7 @@ A likert single stimulus page creates a single-stimulus likert rating.
 * **id** Identifier of the page.
 * **name** Name of the page (is shown as title)
 * **content** Content (HTML) of the page. The content is shown on the upper part of the page.
-* **showWaveform** If set to true, the waveform of the stimulus is shown. 
-* **mustRate** If set to true, the participant must rate all stimuli.
+* **showWaveform** If set to true, the waveform of the stimulus is shown.
 * **mustPlayback** If set to `ended`, the participant must fully play back the stimulus to the end. If set to `processUpdate`, the participant must start it before rating becomes possible.
 * **stimuli** A map of stimuli, each of which will be presented on a separate page. The key is the name of the condition. The value is the filepath to the stimulus (WAV file).
 * **maxStimuli** An upper limit on the amount of stimuli presented to the user.
