@@ -80,13 +80,13 @@ function addPagesToPageManager(_pageManager, _pages) {
       } else if (pageConfig.type == "consent") {
         _pageManager.addPage(new ConsentPage(_pageManager, pageTemplateRenderer, pageConfig));
       } else if (pageConfig.type == "volume") {
-        var volumePage = new VolumePage(_pageManager, audioContext, audioFileLoader, pageConfig, config.bufferSize, errorHandler, config.language);
+        var volumePage = new VolumePage(_pageManager, pageTemplateRenderer, pageConfig, session, config.language, audioContext, config.bufferSize, audioFileLoader, errorHandler);
         _pageManager.addPage(volumePage);
       } else if (pageConfig.type == "mushra") {
-        var mushraPage = new MushraPage(_pageManager, audioContext, config.bufferSize, audioFileLoader, session, pageConfig, mushraValidator, errorHandler, config.language);
+        var mushraPage = new MushraPage(_pageManager, pageTemplateRenderer, pageConfig, session, config.language, audioContext, config.bufferSize, audioFileLoader, errorHandler, mushraValidator);
         _pageManager.addPage(mushraPage);
       } else if ( pageConfig.type == "spatial"){
-        _pageManager.addPage(new SpatialPage(_pageManager, pageConfig, session, audioContext, config.bufferSize, audioFileLoader, errorHandler, config.language));
+        _pageManager.addPage(new SpatialPage(_pageManager, pageTemplateRenderer, pageConfig, session, config.language, audioContext, config.bufferSize, audioFileLoader, errorHandler));
       } else if (pageConfig.type == "paired_comparison") {
         var pcPageManager = new PairedComparisonPageManager();
         pcPageManager.createPages(_pageManager, pageTemplateRenderer, pageConfig, audioContext, config.bufferSize, audioFileLoader, session, errorHandler, config.language);
@@ -100,7 +100,7 @@ function addPagesToPageManager(_pageManager, _pages) {
         likertSingleStimulusPageManager.createPages(_pageManager, pageTemplateRenderer, pageConfig, audioContext, config.bufferSize, audioFileLoader, session, errorHandler, config.language);
         likertSingleStimulusPageManager = null;
       } else if (pageConfig.type == "likert_multi_stimulus") {
-        var likertMultiStimulusPage = new LikertMultiStimulusPage(pageManager, pageTemplateRenderer, pageConfig, audioContext, config.bufferSize, audioFileLoader, session, errorHandler, config.language);
+        var likertMultiStimulusPage = new LikertMultiStimulusPage(pageManager, pageTemplateRenderer, pageConfig, session, config.language, audioContext, config.bufferSize, audioFileLoader, errorHandler);
         _pageManager.addPage(likertMultiStimulusPage);
       } else if (pageConfig.type == "finish") {
         var finishPage = new FinishPage(_pageManager, pageTemplateRenderer, pageConfig, session, config.language, dataSender);
