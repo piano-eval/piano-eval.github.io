@@ -19,14 +19,17 @@ pages:
       id: training_2
       name: Training No.2
       content: test description
-      mustRate: true
       stimuli:
           C1: configs/resources/audio/mono_c1.wav
           C2: configs/resources/audio/mono_c2.wav
           C3: configs/resources/audio/mono_c3.wav
-      response:
-        - value: listened
-          label: I listened to this item
+      stimulusQuestionnaire:
+        - type: likert
+          name: multi-likert-question
+          optional: false
+          response:
+            - value: listened
+              label: I listened to this item
     - type: mushra
       id: training_3
       name: Training No.3

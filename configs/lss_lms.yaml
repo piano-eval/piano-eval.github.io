@@ -28,27 +28,30 @@ pages:
       C2: configs/resources/audio/mono_c2.wav
       C3: configs/resources/audio/mono_c3.wav
 
-    response:
-      - value: not at all
-        label: Not at all
-        img: configs/resources/images/star_off.png
-        imgSelected: configs/resources/images/star_on.png
-        imgHigherResponseSelected: configs/resources/images/star_on.png
-      - value: not a lot
-        label: Not a lot
-        img: configs/resources/images/star_off.png
-        imgSelected: configs/resources/images/star_on.png
-        imgHigherResponseSelected: configs/resources/images/star_on.png
-      - value: a bit
-        label: A bit
-        img: configs/resources/images/star_off.png
-        imgSelected: configs/resources/images/star_on.png
-        imgHigherResponseSelected: configs/resources/images/star_on.png
-      - value: much
-        label: Much
-        img: configs/resources/images/star_off.png
-        imgSelected: configs/resources/images/star_on.png
-        imgHigherResponseSelected: configs/resources/images/star_on.png
+    stimulusQuestionnaire:
+      - type: likert
+        name: multi-likert-question
+        response:
+          - value: not at all
+            label: Not at all
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+          - value: not a lot
+            label: Not a lot
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+          - value: a bit
+            label: A bit
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+          - value: much
+            label: Much
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
 
   - type: likert_single_stimulus
     id: lss2
