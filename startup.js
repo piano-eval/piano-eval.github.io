@@ -29,42 +29,6 @@ window.onresize = function(event) {
 // });
 
 
-// callbacks
-function callbackFilesLoaded() {
-  pageManager.start();
-  pageTemplateRenderer.renderProgressBar(("page_progressbar"));
-  pageTemplateRenderer.renderHeader(("page_header"));
-  pageTemplateRenderer.renderNavigation(("page_navigation"));
-
-  if (config.stopOnErrors == false || !errorHandler.errorOccurred()) {
-    $.mobile.loading("hide");
-    $("body").children().children().removeClass('ui-disabled');
-  } else {
-    var errors = errorHandler.getErrors();
-    var ul = $("<ul style='text-align:left;'></ul>");
-    $('#popupErrorsContent').append(ul);
-    for (var i = 0; i < errors.length; ++i) {
-      ul.append($('<li>' + errors[i] + '</li>'));
-    }
-    $("#popupErrors").popup("open");
-    $.mobile.loading("hide");
-  }
-
-  if ($.mobile.activePage) {
-    $.mobile.activePage.trigger('create');
-  }
-}
-
-function callbackURLFound() {
-  var errors = errorHandler.getErrors();
-  var ul = $("<ul style='text-align:left;'></ul>");
-  $('#popupErrorsContent').append(ul);
-  for (var i = 0; i < errors.length; ++i) {
-    ul.append($('<li>' + errors[i] + '</li>'));
-  }
-  $("#popupErrors").popup("open");
-}
-
 function addPagesToPageManager(_pageManager, _pages) {
   for (var i = 0; i < _pages.length; ++i) {
     if (Array.isArray(_pages[i])) {
@@ -106,9 +70,8 @@ function addPagesToPageManager(_pageManager, _pages) {
         var finishPage = new FinishPage(_pageManager, pageTemplateRenderer, pageConfig, session, config.language, dataSender);
         _pageManager.addPage(finishPage);
       } else {
-
-        errorHandler.sendError("Type not specified.");
-
+        errorHandler.sendError("Page type not specified.");
+        errorHandler.displayErrors();
       }
     }
   }
@@ -127,21 +90,11 @@ function startup(config) {
 
 
   if (config == null) {
-    errorHandler.sendError("URL couldn't be found!");
-    callbackURLFound();
+    errorHandler.sendError("Configuration file couldn't be found!");
+    errorHandler.displayErrors();
   }
 
   $.mobile.page.prototype.options.theme = 'a';
-  var interval = setInterval(function() {
-    $.mobile.loading("show", {
-      text : "Loading...",
-      textVisible : true,
-      theme : "a",
-      html : ""
-    });
-    clearInterval(interval);
-  }, 1);
-  
   
   if (pageManager !== null) { // clear everything for new experiment
     pageTemplateRenderer.clear();
@@ -152,19 +105,10 @@ function startup(config) {
   localizer = new Localizer();
   localizer.initializeNLSFragments(nls);
 
-  pageManager = null;
-  audioContext;
-  audioFileLoader = null;
-  mushraValidator = null;
-  dataSender = null;
-  session = null;
-  pageTemplateRenderer = null;
-  interval2 = null;
-
   document.title = config.testname;
   $('#header').append(document.createTextNode(config.testname));
 
-  pageManager = new PageManager("pageManager", "page_content", localizer);
+  pageManager = new PageManager("pageManager", "page_content", localizer, errorHandler, config.stopOnErrors);
   window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
   if ( typeof AudioContext !== 'undefined') {
@@ -205,11 +149,14 @@ function startup(config) {
 
   addPagesToPageManager(pageManager, config.pages);
 
-  interval2 = setInterval(function() {
-    clearInterval(interval2);
-    audioFileLoader.startLoading(callbackFilesLoaded);
-  }, 10);
+  pageManager.start();
+  pageTemplateRenderer.renderProgressBar(("page_progressbar"));
+  pageTemplateRenderer.renderHeader(("page_header"));
+  pageTemplateRenderer.renderNavigation(("page_navigation"));
 
+  if ($.mobile.activePage) {
+    $.mobile.activePage.trigger('create');
+  }
 }
 
 // start code (loads config) 
@@ -239,7 +186,6 @@ var mushraValidator = null;
 var dataSender = null;
 var session = null;
 var pageTemplateRenderer = null;
-var interval2 = null;
 
 
 YAML.load(configFile, (function(result) {
