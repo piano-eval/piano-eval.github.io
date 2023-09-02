@@ -261,7 +261,6 @@ pages:
    popupContent: Your results were sent. Goodbye and have a nice day   
    showResults: true
    showErrors: true
-   writeResults: true
    questionnaire:
        - type: text
          label: eMail

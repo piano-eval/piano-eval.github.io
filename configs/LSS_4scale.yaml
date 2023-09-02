@@ -45,4 +45,3 @@ pages:
       name: Thank you
       content: Thank you for attending
       showResults: true
-      writeResults: true
