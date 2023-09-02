@@ -156,7 +156,9 @@ function startup(config) {
   addPagesToPageManager(pageManager, config.pages);
 
   pageManager.start();
-  pageTemplateRenderer.renderProgressBar(("page_progressbar"));
+  if (config.showProgressBar !== false) {
+    pageTemplateRenderer.renderProgressBar(("page_progressbar"));
+  }
   pageTemplateRenderer.renderHeader(("page_header"));
   pageTemplateRenderer.renderNavigation(("page_navigation"));
 
