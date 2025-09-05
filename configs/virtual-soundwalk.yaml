@@ -4,7 +4,7 @@ bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: false
 showProgressBar: false
-remoteService: //webmushra-backend.herokuapp.com/adaptive-navigation
+remoteService: //130.193.41.75/adaptive-navigation
 pages:
   - type: generic
     id: login
