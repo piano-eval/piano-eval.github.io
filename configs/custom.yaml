@@ -1,5 +1,5 @@
 testname: Virtual Barcelona Soundwalk
-testId: barcelona-soundwalk
+testId: custom-test
 bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: false
