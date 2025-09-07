@@ -14,20 +14,6 @@ pages:
       <p>Experience the sounds of Barcelona like you were there. Discover all ten destinations.</p>
       <p>All sounds downloaded from <a href="https://freesound.org/">Freesound</a>, see respective pages for links.</p>
   - type: mushra
-    id: trial1
-    name: Mono Trial 1
-    content: test description
-    send: forget
-    showWaveform: true
-    enableLooping: false 
-    reference: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-    createAnchor35: false
-    createAnchor70: false
-    stimuli:
-        C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-        C2: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-        C3: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-  - type: mushra
     id: trial2
     name: Mono Trial 2
     content: test description
@@ -41,23 +27,7 @@ pages:
         C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
         C2: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
         C3: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-  - type: mushra
-    id: trial3
-    name: Mono Trial 3
-    content: test description
-    send: forget
-    showWaveform: true
-    enableLooping: false 
-    reference: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-    createAnchor35: false
-    createAnchor70: false
-    stimuli:
-        C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-        C2: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-        C3: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-
   - type: finish
     name: "The End!"
     content: You've reached the end (which is impossible)
     send: false
-  
