@@ -38,7 +38,7 @@ pages:
             label: south-east
           - value: 8
             label: south
-  - type: likert_multi_stimulus
+  - type: likert_single_stimulus
     id: parc-guell
     name: Parc G&uuml;ell
     content: <a href="https://freesound.org/s/66603/">66603__susoooo__20-08-08-16-31-parque-guell</a>
@@ -57,7 +57,7 @@ pages:
             label: south-east
           - value: 3
             label: east
-  - type: likert_multi_stimulus
+  - type: likert_single_stimulus
     id: sagrada-familia
     name: Sagrada Familia
     content: <a href="https://freesound.org/s/63713/">63713__susoooo__20-08-08-12-34-sagrada-familia-subida-ascensor</a>
@@ -78,7 +78,7 @@ pages:
             label: south
           - value: 4
             label: south-east
-  - type: likert_multi_stimulus
+  - type: likert_single_stimulus
     id: parc-ciutadella
     name: Parc de la Ciutadella
     content: <a href="https://freesound.org/s/66615/">66615__susoooo__22-08-08-18-00-embarcadero-parque-de-la-ciudadela</a>
@@ -103,7 +103,7 @@ pages:
             label: south
           - value: 5
             label: south-east
-  - type: likert_multi_stimulus
+  - type: likert_single_stimulus
     id: barceloneta
     name: Barceloneta
     content: <a href="https://freesound.org/s/107567/">107567__sonsdebarcelona__barcelonetabeach</a>
@@ -122,7 +122,7 @@ pages:
             label: west
           - value: 4
             label: north-west
-  - type: likert_multi_stimulus
+  - type: likert_single_stimulus
     id: plaza-san-jaume
     name: Pla&ccedil;a Sant Jaume
     content: <a href="https://freesound.org/s/66604/">66604__susoooo__21-01-08-10-30-plaza-san-jaume</a>
@@ -143,7 +143,7 @@ pages:
             label: north
           - value: 5
             label: east
-  - type: likert_multi_stimulus
+  - type: likert_single_stimulus
     id: la-rambla
     name: La Rambla
     content: <a href="https://freesound.org/s/19043/">19043__bram__barca-versus-arsenal-preview</a>
@@ -166,7 +166,7 @@ pages:
             label: north-east
           - value: 6
             label: east
-  - type: likert_multi_stimulus
+  - type: likert_single_stimulus
     id: rambla-del-raval
     name: Rambla del Raval
     content: <a href="https://freesound.org/s/51181/">51181__jaume-orejuela__aval1</a>
@@ -189,7 +189,7 @@ pages:
             label: east
           - value: 10
             label: south
-  - type: likert_multi_stimulus
+  - type: likert_single_stimulus
     id: estadi-olimpic
     name: Estadi Olimpic de Montjuic
     content: <a href="https://freesound.org/s/66607/">66607__susoooo__21-08-08-14-30-estadio-olimpico-de-montjuic</a>
@@ -208,7 +208,7 @@ pages:
             label: north-east
           - value: 10
             label: east
-  - type: likert_multi_stimulus
+  - type: likert_single_stimulus
     id: castell-montjuic
     name: Castell de Montjuic
     content: <a href="https://freesound.org/s/66606/">66606__susoooo__21-08-08-13-06-castillo-montjuic</a>
