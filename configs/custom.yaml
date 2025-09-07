@@ -1,0 +1,52 @@
+testname: Virtual Barcelona Soundwalk
+testId: barcelona-soundwalk
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: false
+showProgressBar: false
+remoteService: //piano-eval.com/adaptive-navigation
+pages:
+  - type: generic
+    id: login
+    name: Start
+    content: >-
+      <p>Welcome to the virtual Barcelona soundwalk.</p>
+      <p>Experience the sounds of Barcelona like you were there. Discover all ten destinations.</p>
+      <p>All sounds downloaded from <a href="https://freesound.org/">Freesound</a>, see respective pages for links.</p>
+
+  - type: mushra
+    id: trial1
+    name: Mono Trial 1
+    content: test description
+    send: forget
+    showWaveform: true
+    enableLooping: false 
+    reference: configs/resources/audio/mono_ref.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+        C1: configs/resources/audio/mono_c1.wav
+        C2: configs/resources/audio/mono_c2.wav
+        C3: configs/resources/audio/mono_c3.wav
+
+  - type: mushra
+    id: trial2
+    name: Mono Trial 2
+    content: test description
+    send: forget
+    showWaveform: true
+    enableLooping: false 
+    reference: configs/resources/audio/mono_ref.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+        C1: configs/resources/audio/mono_c1.wav
+        C2: configs/resources/audio/mono_c2.wav
+        C3: configs/resources/audio/mono_c3.wav
+
+
+  - type: finish
+    name: "The End!"
+    content: You've reached the end (which is impossible)
+    send: false
+  
