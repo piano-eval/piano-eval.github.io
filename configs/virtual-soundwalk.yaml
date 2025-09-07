@@ -1,4 +1,4 @@
-testname: Custom test 2
+testname: Custom test
 testId: barcelona-soundwalk
 bufferSize: 2048
 stopOnErrors: true
