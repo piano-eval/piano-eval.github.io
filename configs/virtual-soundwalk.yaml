@@ -4,7 +4,7 @@ bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: false
 showProgressBar: false
-remoteService: http://89.169.180.152:8000/adaptive-navigation
+remoteService: //piano-eval.com/adaptive-navigation
 pages:
   - type: generic
     id: login
