@@ -5,7 +5,8 @@ testname: AB without looping
 testId: custom
 bufferSize: 2048
 stopOnErrors: true
-showButtonPreviousPage: true
+showButtonPreviousPage: false
+showProgressBar: false
 remoteService: //piano-eval.com/adaptive-navigation
 
 
@@ -14,10 +15,8 @@ pages:
     - type: paired_comparison
       id: trialAB2
       name: Mono Trial AB
-      unforced: 
       content: test description AB
-      enableLooping: false 
-      reference: soundwalk/63713__susoooo__20-08-08-12-34-sagrada-familia-subida-ascensor.mp3
+      send: forget
       stimuli:
           C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
           C2: soundwalk/66603__susoooo__20-08-08-16-31-parque-guell.mp3
