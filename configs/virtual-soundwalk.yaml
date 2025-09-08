@@ -17,18 +17,14 @@ pages:
         C3: configs/resources/audio/mono_c3.wav
     stimulusQuestionnaire:
       - type: likert
-        name: likert10
-        label: "Likert scale:"
+        name: likert1
+        label: "Rating:"
         response:
-          - value: 0
-            label: alpha
-            shortcut: q
           - value: 1
-            label: beta
-            shortcut: w
           - value: 2
-            label: gamma
-            shortcut: e
+          - value: 3
+          - value: 4
+          - value: 5
   - type: finish
     name: Thank you
     content: Thank you for attending
