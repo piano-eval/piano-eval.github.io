@@ -16,21 +16,11 @@ pages:
       name: Mono Trial AB
       unforced: 
       content: test description AB
-      showWaveform: true
       enableLooping: false 
-      reference: configs/resources/audio/mono_ref.wav
+      reference: soundwalk/63713__susoooo__20-08-08-12-34-sagrada-familia-subida-ascensor.mp3
       stimuli:
-          C1: configs/resources/audio/mono_c1.wav
-          C2: configs/resources/audio/mono_c2.wav
-          C3: configs/resources/audio/mono_c3.wav
-          C4: configs/resources/audio/mono_c1.wav
-          C5: configs/resources/audio/mono_c2.wav
-          C6: configs/resources/audio/mono_c3.wav
-          C7: configs/resources/audio/mono_c1.wav
-          C8: configs/resources/audio/mono_c2.wav
-          C9: configs/resources/audio/mono_c3.wav
-          C10: configs/resources/audio/mono_c1.wav
-          C11: configs/resources/audio/mono_c2.wav
+          C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
+          C2: soundwalk/66603__susoooo__20-08-08-16-31-parque-guell.mp3
 
 
     - type: finish
