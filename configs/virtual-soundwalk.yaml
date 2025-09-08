@@ -17,15 +17,11 @@ pages:
     id: trial2
     name: Mono Trial
     content: test description
-    showWaveform: true
-    enableLooping: false 
-    reference: configs/resources/audio/mono_ref.wav
-    createAnchor35: false
-    createAnchor70: false
+    reference: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
     stimuli:
-        C1: configs/resources/audio/mono_c1.wav
-        C2: configs/resources/audio/mono_c2.wav
-        C3: configs/resources/audio/mono_c3.wav
+        C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
+        C2: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
+        C3: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
   - type: finish
     name: Thank you
     content: Thank you for attending
