@@ -16,12 +16,19 @@ pages:
         C2: configs/resources/audio/mono_c2.wav
         C3: configs/resources/audio/mono_c3.wav
     stimulusQuestionnaire:
-      - type: slider
-        name: confidence
-        label: Confidence
-        optional: true
-        min: 0
-        max: 100
+      - type: likert
+        name: likert10
+        label: "Likert scale:"
+        response:
+          - value: 0
+            label: alpha
+            shortcut: q
+          - value: 1
+            label: beta
+            shortcut: w
+          - value: 2
+            label: gamma
+            shortcut: e
   - type: finish
     name: Thank you
     content: Thank you for attending
