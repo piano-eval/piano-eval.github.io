@@ -16,6 +16,7 @@ pages:
     id: lms1
     name: Question 1
     content: test description
+    send: forget
     mustPlayback: processUpdate
     stimuli:
         C1: configs/resources/audio/mono_c1.wav
@@ -40,6 +41,7 @@ pages:
     id: lms2
     name: Question 2
     content: test description
+    send: forget
     mustPlayback: processUpdate
     stimuli:
         C1: configs/resources/audio/mono_c1.wav
@@ -64,6 +66,7 @@ pages:
     id: lms3
     name: Question 3
     content: test description
+    send: forget
     mustPlayback: processUpdate
     stimuli:
         C1: configs/resources/audio/mono_c1.wav
