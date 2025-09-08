@@ -6,20 +6,30 @@ showButtonPreviousPage: false
 showProgressBar: false
 remoteService: //piano-eval.com/adaptive-navigation
 pages:
-  - type: generic
-    id: login
-    name: Start
-    content: >-
-      <p>Welcome to the virtual Barcelona soundwalk.</p>
-      <p>Experience the sounds of Barcelona like you were there. Discover all ten destinations.</p>
-      <p>All sounds downloaded from <a href="https://freesound.org/">Freesound</a>, see respective pages for links.</p>
-  - type: mushra
-    id: trial2
-    name: Mono Trial
+  - type: likert_multi_stimulus
+    id: lms
+    name: Multi stimulus page with text field and slider each
     content: test description
-    send: forget
+    mustPlayback: processUpdate
     stimuli:
-        C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
+        C1: configs/resources/audio/mono_c1.wav
+        C2: configs/resources/audio/mono_c2.wav
+        C3: configs/resources/audio/mono_c3.wav
+    stimulusQuestionnaire:
+      - type: text
+        name: genre
+        label: Genre
+        default: ""
+      - type: slider
+        name: confidence
+        label: Confidence
+        optional: true
+        min: 0
+        max: 100
+    questionnaire:
+      - type: long_text
+        name: feedback
+        label: Feedback
   - type: finish
     name: Thank you
     content: Thank you for attending
