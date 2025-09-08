@@ -13,9 +13,9 @@ remoteService: //piano-eval.com/adaptive-navigation
 pages:
 
     - type: paired_comparison
-      id: trialAB2
+      id: placa-catalunya
       name: Mono Trial AB
-      content: test description AB
+      content: <a href="https://freesound.org/s/66619/">66619__susoooo__23-08-08-20-00-plaza-de-catalunya</a>
       send: forget
       stimuli:
           C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
