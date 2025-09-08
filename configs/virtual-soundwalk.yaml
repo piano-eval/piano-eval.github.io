@@ -1,4 +1,4 @@
-testname: AB without looping
+testname: Custom test
 testId: custom
 bufferSize: 2048
 stopOnErrors: true
@@ -7,8 +7,8 @@ showProgressBar: false
 remoteService: //piano-eval.com/adaptive-navigation
 pages:
   - type: likert_multi_stimulus
-    id: lms
-    name: Multi stimulus page with text field and slider each
+    id: lms1
+    name: Question 1
     content: test description
     mustPlayback: processUpdate
     stimuli:
@@ -16,20 +16,12 @@ pages:
         C2: configs/resources/audio/mono_c2.wav
         C3: configs/resources/audio/mono_c3.wav
     stimulusQuestionnaire:
-      - type: text
-        name: genre
-        label: Genre
-        default: ""
       - type: slider
         name: confidence
         label: Confidence
         optional: true
         min: 0
         max: 100
-    questionnaire:
-      - type: long_text
-        name: feedback
-        label: Feedback
   - type: finish
     name: Thank you
     content: Thank you for attending
