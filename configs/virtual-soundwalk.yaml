@@ -18,11 +18,8 @@ pages:
     name: Mono Trial
     content: test description
     send: forget
-    reference: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
     stimuli:
         C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-        C2: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-        C3: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
   - type: finish
     name: Thank you
     content: Thank you for attending
