@@ -11,6 +11,13 @@ remoteService: //piano-eval.com/adaptive-navigation
 
 
 pages:
+  - type: generic
+    id: login
+    name: Start
+    content: >-
+      <p>Welcome to the virtual Barcelona soundwalk.</p>
+      <p>Experience the sounds of Barcelona like you were there. Discover all ten destinations.</p>
+      <p>All sounds downloaded from <a href="https://freesound.org/">Freesound</a>, see respective pages for links.</p>
 
   - type: likert_single_stimulus
     id: placa-catalunya
@@ -27,16 +34,8 @@ pages:
         name: go
         label: "Go"
         response:
-          - value: 2
-            label: north-west
-          - value: 3
-            label: north
-          - value: 4
-            label: east
-          - value: 7
-            label: south-east
-          - value: 8
-            label: south
+          - value: 0
+            label: north-west\
 
 
     - type: finish
