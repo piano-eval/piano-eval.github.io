@@ -12,14 +12,31 @@ remoteService: //piano-eval.com/adaptive-navigation
 
 pages:
 
-    - type: paired_comparison
-      id: placa-catalunya
-      name: Mono Trial AB
-      content: <a href="https://freesound.org/s/66619/">66619__susoooo__23-08-08-20-00-plaza-de-catalunya</a>
-      send: forget
-      stimuli:
-          C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
-          C2: soundwalk/66603__susoooo__20-08-08-16-31-parque-guell.mp3
+  - type: likert_single_stimulus
+    id: placa-catalunya
+    name: Pla&ccedil;a de Catalunya
+    content: <a href="https://freesound.org/s/66619/">66619__susoooo__23-08-08-20-00-plaza-de-catalunya</a>
+    send: forget
+    stimuli:
+        C1: soundwalk/66619__susoooo__23-08-08-20-00-plaza-de-catalunya.mp3
+    questionnaire:
+      - type: long_text
+        label: Impressions
+        optional: true
+      - type: likert
+        name: go
+        label: "Go"
+        response:
+          - value: 2
+            label: north-west
+          - value: 3
+            label: north
+          - value: 4
+            label: east
+          - value: 7
+            label: south-east
+          - value: 8
+            label: south
 
 
     - type: finish
