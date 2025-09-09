@@ -13,85 +13,83 @@ pages:
       <p>Welcome to the listening test!.</p>
       <p>In this test, you will listen to piano performances of classical music played by a generative model.</p>
       <p>For this, we want to store the answers you give to the following questions.<br>Do you give consent for this? If yes, please proceed to the next page.</p>
-  -
-   - random
-   - type: likert_multi_stimulus
-     id: lms1
-     name: Question 1
-     content: test description
-     send: remember
-     mustPlayback: processUpdate
-     stimuli:
-         C1: configs/resources/audio/mono_c1.wav
-         C2: configs/resources/audio/mono_c2.wav
-         C3: configs/resources/audio/mono_c3.wav
-     stimulusQuestionnaire:
-       - type: likert
-         name: likert
-         label: "Rating:"
-         response:
-           - value: 1
-             label: 1
-           - value: 2
-             label: 2
-           - value: 3
-             label: 3
-           - value: 4
-             label: 4
-           - value: 5
-             label: 5
-   - type: likert_multi_stimulus
-     id: lms2
-     name: Question 2
-     content: test description
-     send: remember
-     mustPlayback: processUpdate
-     stimuli:
-         C1: configs/resources/audio/mono_c1.wav
-         C2: configs/resources/audio/mono_c2.wav
-         C3: configs/resources/audio/mono_c3.wav
-     stimulusQuestionnaire:
-       - type: likert
-         name: likert
-         label: "Rating:"
-         response:
-           - value: 1
-             label: 1
-           - value: 2
-             label: 2
-           - value: 3
-             label: 3
-           - value: 4
-             label: 4
-           - value: 5
-             label: 5
-   - type: likert_multi_stimulus
-     id: lms3
-     name: Question 3
-     content: test description
-     send: remember
-     mustPlayback: processUpdate
-     stimuli:
-         C1: configs/resources/audio/mono_c1.wav
-         C2: configs/resources/audio/mono_c2.wav
-         C3: configs/resources/audio/mono_c3.wav
-     stimulusQuestionnaire:
-       - type: likert
-         name: likert
-         label: "Rating:"
-         response:
-           - value: 1
-             label: 1
-           - value: 2
-             label: 2
-           - value: 3
-             label: 3
-           - value: 4
-             label: 4
-           - value: 5
-             label: 5
+  - type: likert_multi_stimulus
+    id: lms1
+    name: Question 1
+    content: test description
+    send: remember
+    mustPlayback: processUpdate
+    stimuli:
+        C1: configs/resources/audio/mono_c1.wav
+        C2: configs/resources/audio/mono_c2.wav
+        C3: configs/resources/audio/mono_c3.wav
+    stimulusQuestionnaire:
+      - type: likert
+        name: likert
+        label: "Rating:"
+        response:
+          - value: 1
+            label: 1
+          - value: 2
+            label: 2
+          - value: 3
+            label: 3
+          - value: 4
+            label: 4
+          - value: 5
+            label: 5
+  - type: likert_multi_stimulus
+    id: lms2
+    name: Question 2
+    content: test description
+    send: remember
+    mustPlayback: processUpdate
+    stimuli:
+        C1: configs/resources/audio/mono_c1.wav
+        C2: configs/resources/audio/mono_c2.wav
+        C3: configs/resources/audio/mono_c3.wav
+    stimulusQuestionnaire:
+      - type: likert
+        name: likert
+        label: "Rating:"
+        response:
+          - value: 1
+            label: 1
+          - value: 2
+            label: 2
+          - value: 3
+            label: 3
+          - value: 4
+            label: 4
+          - value: 5
+            label: 5
+  - type: likert_multi_stimulus
+    id: lms3
+    name: Question 3
+    content: test description
+    send: remember
+    mustPlayback: processUpdate
+    stimuli:
+        C1: configs/resources/audio/mono_c1.wav
+        C2: configs/resources/audio/mono_c2.wav
+        C3: configs/resources/audio/mono_c3.wav
+    stimulusQuestionnaire:
+      - type: likert
+        name: likert
+        label: "Rating:"
+        response:
+          - value: 1
+            label: 1
+          - value: 2
+            label: 2
+          - value: 3
+            label: 3
+          - value: 4
+            label: 4
+          - value: 5
+            label: 5
   - type: finish
-      name: Thank you
-      content: Thank you for attending
-      showResults: true
-      writeResults: true
+    name: Thank you
+    content: Thank you for attending
+    showResults: true
+    writeResults: true
