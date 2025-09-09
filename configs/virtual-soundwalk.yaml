@@ -41,6 +41,7 @@ pages:
               label: 4
             - value: 5
               label: 5
+   -
     - type: likert_multi_stimulus
       id: lms2
       name: Question 2
@@ -66,6 +67,7 @@ pages:
               label: 4
             - value: 5
               label: 5
+   -
     - type: likert_multi_stimulus
       id: lms3
       name: Question 3
@@ -91,7 +93,7 @@ pages:
               label: 4
             - value: 5
               label: 5
-    - type: finish
+  - type: finish
       name: Thank you
       content: Thank you for attending
       showResults: true
