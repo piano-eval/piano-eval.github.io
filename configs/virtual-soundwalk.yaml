@@ -90,8 +90,8 @@ pages:
              label: 4
            - value: 5
              label: 5
-   - type: finish
-       name: Thank you
-       content: Thank you for attending
-       showResults: true
-       writeResults: true
+  - type: finish
+      name: Thank you
+      content: Thank you for attending
+      showResults: true
+      writeResults: true
