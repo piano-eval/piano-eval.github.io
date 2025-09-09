@@ -6,7 +6,7 @@ showButtonPreviousPage: false
 showProgressBar: false
 remoteService: //piano-eval.com/adaptive-navigation
 pages:
-  - type: generic
+  - type: consent
     id: login
     name: Start
     mustConsent: true
