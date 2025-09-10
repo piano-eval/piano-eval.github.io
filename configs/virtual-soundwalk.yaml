@@ -18,7 +18,32 @@ pages:
       - value: 1
         label: 1
   - type: likert_multi_stimulus
-    id: lms1
+    id: 0
+    name: Question 0
+    content: test description
+    send: remember
+    mustPlayback: processUpdate
+    stimuli:
+        C1: configs/resources/audio/mono_c1.wav
+        C2: configs/resources/audio/mono_c2.wav
+        C3: configs/resources/audio/mono_c3.wav
+    stimulusQuestionnaire:
+      - type: likert
+        name: likert
+        label: "Rating:"
+        response:
+          - value: 1
+            label: 1
+          - value: 2
+            label: 2
+          - value: 3
+            label: 3
+          - value: 4
+            label: 4
+          - value: 5
+            label: 5
+  - type: likert_multi_stimulus
+    id: 1
     name: Question 1
     content: test description
     send: remember
@@ -43,33 +68,8 @@ pages:
           - value: 5
             label: 5
   - type: likert_multi_stimulus
-    id: lms2
-    name: Question 2
-    content: test description
-    send: remember
-    mustPlayback: processUpdate
-    stimuli:
-        C1: configs/resources/audio/mono_c1.wav
-        C2: configs/resources/audio/mono_c2.wav
-        C3: configs/resources/audio/mono_c3.wav
-    stimulusQuestionnaire:
-      - type: likert
-        name: likert
-        label: "Rating:"
-        response:
-          - value: 1
-            label: 1
-          - value: 2
-            label: 2
-          - value: 3
-            label: 3
-          - value: 4
-            label: 4
-          - value: 5
-            label: 5
-  - type: likert_multi_stimulus
-    id: lms3
-    name: Question 3
+    id: 2
+    name: 2
     content: test description
     send: remember
     mustPlayback: processUpdate
