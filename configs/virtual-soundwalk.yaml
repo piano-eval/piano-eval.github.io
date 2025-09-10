@@ -69,7 +69,7 @@ pages:
             label: 5
   - type: likert_multi_stimulus
     id: 2
-    name: 2
+    name: Question 2
     content: test description
     send: remember
     mustPlayback: processUpdate
