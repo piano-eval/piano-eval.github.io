@@ -13,6 +13,7 @@ pages:
       <p>Welcome to the listening test!.</p>
       <p>In this test, you will listen to piano performances of classical music played by a generative model.</p>
       <p>For this, we want to store the answers you give to the following questions.<br>Do you give consent for this? If yes, please proceed to the next page.</p>
+    send: remember
   - type: likert_multi_stimulus
     id: lms1
     name: Question 1
