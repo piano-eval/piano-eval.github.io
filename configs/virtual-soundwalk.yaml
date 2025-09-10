@@ -6,19 +6,16 @@ showButtonPreviousPage: false
 showProgressBar: false
 remoteService: //piano-eval.com/adaptive-navigation
 pages:
-  - type: toggle
+  - type: generic
     id: login
     name: Start
     content: >-
       <p>Welcome to the listening test!.</p>
       <p>In this test, you will listen to piano performances of classical music played by a generative model.</p>
       <p>For this, we want to store the answers you give to the following questions.<br>Do you give consent for this? If yes, please proceed to the next page.</p>
-    response :
-      − value : ""
-      label : no
-      − value : yes
-      label : yes
-      selected : true
+    response:
+      - value: 1
+        label: 1
   - type: likert_multi_stimulus
     id: lms1
     name: Question 1
