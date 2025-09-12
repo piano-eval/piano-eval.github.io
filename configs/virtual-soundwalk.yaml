@@ -11,7 +11,7 @@ pages:
     name: Start
     content: >-
       <p>Welcome to the listening test!.</p>
-      <p>In this test, you will listen to piano performances of classical music played by generative models.</p>
+      <p>In this test, you will listen to piano performances of classical music played by MIDI generative models. These models aim to recreate the expressiveness of human piano players.</p>
       <p>In each question, you will be asked to rate four performances of the same musical piece according to your preference.</p>
       <p>The purpose of our research is creating and validating objective metrics that would align with human perception.</p>
       <p>For this, we want to store the answers you give to the following questions.<br>Do you give consent for this? If yes, please proceed to the next page.</p>
@@ -19,8 +19,6 @@ pages:
     response:
       - value: 1
         label: 1
-  - type: finish
+  - type: generic
     name: Thank you
     content: Thank you for attending!
-    showResults: false
-    writeResults: false
